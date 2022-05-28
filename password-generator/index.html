@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p>
+                Password Generator
+            </p>
+            
+        </header>
+        <section id="option-container">
+            <div class="inset-container">
+                <p>Password Length</p>
+                <div class="slider">
+                    <input type="text" id="slider-input" value="0" >
+                    <input type="range" min="1" max="64" value="1" id="slider" class="styled-slider slider-progress" oninput="myFunction(value)">
+                </div>
+                <div class="checkboxes">
+                    <div class="checkbox-container">
+                    <input type="checkbox" id="lowercase" class="checkmark" checked>
+                    <label for="lowercase">
+                        Lowercase
+                    </label>
+                    </div>
+                    <div class="checkbox-container">
+                    <input type="checkbox" id="uppercase" class="checkmark" checked>
+                    <label for="uppercase">
+                        Uppercase
+                    </label>
+                    </div>
+                    <div class="checkbox-container">
+                    <input type="checkbox" id="numbers" class="checkmark" checked>
+                    <label for="numbers">
+                        Numbers
+                    </label>
+                    </div>
+                    <div class="checkbox-container">
+                    <input type="checkbox" id="symbols" class="checkmark" checked>
+                    <label for="symbols">
+                        Symbols
+                    </label>
+                    </div>
+                </div>
+                </div>
+                <button id ="generate">
+                    Generate Password
+                </button>
+                <div id="generated-password">
+                    <input type="text" id="password" value="">
+                    <button id="copy" onclick="copyToClipboard()">copy</button>
+                </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

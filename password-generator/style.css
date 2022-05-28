@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    background-color: #27214D;
+    color: #00A7B5;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#option-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+    color: #D42450;
+    font-family: 'Caveat', sans-serif;
+}
+
+header p {
+    margin: 20px auto 0;
+}
+
+.inset-container {
+    margin: auto;
+}
+
+.inset-container p {
+    font-size: 12px;
+    margin:10px auto 0;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#slider-input {
+    text-align: right;
+    height: 18px;
+    width: 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #08040B;
+    color: #A9D400;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;  
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkmark {
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    transition: box-shadow 1s;
+    background: #C6E4E4;
+    cursor: pointer;
+    margin-right: 5px;
+    appearance: none;
+}
+
+.checkmark:checked {
+    box-shadow: inset 0 0 0 20px #D42450;
+}
+
+#generate {
+    margin: 10px auto 2px;
+    border: 1px solid;
+    color: #D42450;
+    background-color: #301D78;
+    width: 150px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 7px;
+    box-shadow: 0 5px 0px #D42450;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#generate:hover {
+    background-color: #27214D;
+    transition: all .25s;
+}
+
+#generate:active {
+    color: #00A7B5;
+    background-color: #27214D;
+    box-shadow: 0 1px 0px #00A7B5;
+    transform: translateY(3px);
+}
+
+#generated-password {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#copy {
+    margin: 7px auto 0;
+    border: 2px solid #D42450;
+    background-color: #D42450;
+    color: #27214D;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1px;
+    width: 50px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: all .25s;
+}
+
+#copy:hover {
+    background-color: #27214D;
+    color: #D42450;
+}
+
+#copy:active {
+    background-color: #301D78;
+    color: #00A7B5;
+}
+
+#password {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #08040B;
+    color: #A9D400;
+    padding: 5px;
+}
+
+#password:focus {
+    outline: none;
+    border: 1px solid #A9D400;
+}
+
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+    height: 20px;
+    -webkit-appearance: none;
+  }
+  
+  /*progress support*/
+  input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(var(--ratio) * 100%);
+  }
+  
+  input[type=range].styled-slider:focus {
+    outline: none;
+  }
+  
+  /*webkit*/
+  input[type=range].styled-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 20px;
+    visibility: hidden;
+  }
+  
+  input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 20px;
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(to right, #E9C8D3, #C6E4E4);
+    box-shadow: 2px 2px 5px #000000;
+  }
+  
+  input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #301D78, #D42450) 0/var(--sx) 100% no-repeat, linear-gradient(to right, #E9C8D3, #C6E4E4);
+  }
+  
+  /*mozilla*/
+  input[type=range].styled-slider::-moz-range-thumb {
+    width: 0;
+    height: 20px;
+    visibility: hidden;
+  }
+  
+  input[type=range].styled-slider::-moz-range-track {
+    height: 20px;
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(to right, #E9C8D3, #C6E4E4);
+    box-shadow: 2px 2px 5px #000000;
+  }
+  
+  input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(to right, #301D78, #D42450) 0/var(--sx) 100% no-repeat, linear-gradient(to right, #E9C8D3, #C6E4E4);
+  }
+  
+  /*ms*/
+  input[type=range].styled-slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  input[type=range].styled-slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  input[type=range].styled-slider::-ms-thumb {
+    width: 20px;
+    height: 21px;
+    border-radius: 0;
+    background: #D42450;
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+  
+  input[type=range].styled-slider::-ms-track {
+    height: 20px;
+    border-radius: 0;
+    background: linear-gradient(to right, #E9C8D3, #C6E4E4);
+    border: none;
+    box-shadow: 2px 2px 5px #000000;
+    box-sizing: border-box;
+  }
+  
+  input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+    height: 20px;
+    border-radius: 0px 0 0 0px;
+    margin: -undefined 0 -undefined -undefined;
+    background: linear-gradient(to right, #301D78, #D42450);
+    border: none;
+    border-right-width: 0;
+  }
+  
