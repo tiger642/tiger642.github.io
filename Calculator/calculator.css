@@ -42,15 +42,15 @@ main {
         opacity: 50%;
     }
 
-    main button#positive-negative, #backspace, #multiply, #divide, #square-root,
+    main button#square, #backspace, #multiply, #divide, #square-root,
     #one, #two, #three, #four, #five, #six, #plus, #seven, #eight, #nine, #minus,
-    #period, #zero {
+    #period, #zero #left-par, #right-par{
         width: 100px;
         height: 50px;
     }
 
-    main button#positive-negative, #backspace, #multiply, #divide, #square-root,
-    #plus, #minus, #period {
+    main button#square, #backspace, #multiply, #divide, #square-root,
+    #plus, #minus, #period, #left-par, #right-par{
         background-color: rgb(75, 75, 75);
         color: rgb(221, 220, 220);
     }
@@ -59,17 +59,12 @@ main {
         background-color: rgb(150, 150, 150);
     }
 
-    #menu {
-        grid-area: 2 / 1 / 3 / 3;
-        background-color: rgb(39, 91, 143);
-        color: rgb(221, 220, 220);
-    }
-    #positive-negative {
+    #square {
         grid-area: 2 / 3 / 3 / 4;
     }
     #backspace {
         grid-area: 2 / 4 / 3 / 5;
-        background-color: rgb(113, 13, 1);
+        background-color: rgb(209, 151, 3);
         color: rgb(221, 220, 220);
     }
     #multiply {
@@ -128,5 +123,5 @@ main {
     }
     #equals {
         grid-area: 7 / 3 / 8 / 5;
-        background-color: rgb(209, 151, 3);
+        background-color: rgb(39, 91, 143);
     } 
